@@ -11,7 +11,7 @@ function followUrl(startUrl) {
     })
     .then((data) => {
       console.log(data);
-      if (data?.follow) followUrl(data?.follow);
+      if (data?.follow) followUrl(data.follow);
     })
     .catch((e) => {
       console.error(e);
